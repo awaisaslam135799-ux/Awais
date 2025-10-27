@@ -1,0 +1,90 @@
+<style>
+
+    @keyframes wheelAnimation {
+
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+
+        60%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+        
+    }
+
+
+    @keyframes carKiAnimation {
+        0%{
+            left: 0;
+        }
+        
+        50%{
+            left: 70%;
+        }
+
+        59%{
+            transform: scale(1,1);
+        }
+        60%{
+            transform: scale(-1,1);
+            left: 70%;
+        }
+
+        100%{
+             transform: scale(-1,1);
+            left: 0;
+        }
+    }
+
+#road{
+    width: 100%;
+}
+
+.wheel{
+    animation: wheelAnimation 4s ease-in-out 0s;
+    /* animation-iteration-count: infinite; */
+    /* opacity: 0.2; */
+    width: 45px;
+    position: absolute;
+}
+
+#car{
+    animation: carKiAnimation 4s ease-in-out 0s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+    top:80px;
+    position: absolute;
+    width: 300px;
+    border: 2px solid red;
+}
+
+#carBody{
+    width: 100%;
+}
+
+.wheel:nth-child(2){
+    right: 42px;
+    top:66px
+}
+.wheel:nth-child(3){
+    right: 208px;
+    top:66px
+}
+
+</style>
+
+
+<img src="myroad.jpg" id="road" alt="">
+
+
+<div id="car">
+    <img id="carBody" src="my-car.png" alt="">
+    <img class="wheel" src="wheel.png" alt="">
+    <img class="wheel" src="wheel.png" alt="">
+</div>

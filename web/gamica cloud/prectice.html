@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    body{
+     padding: 0;
+     margin: 0;
+    } 
+    header{
+        background-color: pink;
+    }
+.main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    line-height: 3.5;
+    color: rgb(6, 1, 1);
+    font-weight: bold;
+}
+.main-menu li{
+    cursor: pointer;
+    padding-inline: 20px;
+ }
+ .main-menu li:hover{
+    background-color: palevioletred;
+ }
+ .nested-menu{
+    position: absolute;
+    list-style: none;
+    display: none;
+    /* width: 150px; */
+}
+ .nested-menu > li{
+   width: 130px;    
+ }
+.menu-item:hover .nested-menu{
+  display: block;
+
+}
+
+
+
+ </style>
+<body>
+    <header>
+        <nav>
+            <ol class="main-menu">
+                <li class="menu-item">kpk</li>
+                <li class="menu-item">punjab
+                     <ol class="nested-menu">
+                        <li class="menu-item">lahore
+                            <ol class="nested-menu" style="left: 150px;" >
+                                <li class="nested-item">gulberg</li>
+                                <li class="nested-item">kalma chownk</li>
+                                <li class="nested-item">niazi chownk</li>
+                                <li class="nested-item">bhatti chownk</li>
+                            </ol>
+                        </li>
+                        <li class="nested-item">jung</li>
+                        <li class="nested-item">shaikhpura</li>
+                        <li class="nested-item">faisalabad</li>
+                        <li class="nested-item">toba</li>
+                    </ol>
+                </li>
+                <li class="menu-item">blochistan</li>
+                <li class="menu-item">sindh</li>
+            </ol>
+        </nav>
+    </header>
+</body>
+</html>

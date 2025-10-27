@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 350px;
+            height: 300px;
+            background-color: hsl(215.29deg 23.29% 14.31%);
+            border-radius: 30px;
+            padding: 25px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 130px;
+            background-color: black;
+        }
+
+        .circle{
+            border: none;
+            width: 55px;
+    height: 55px;
+    background-color: rgb(84 80 80);
+    border-radius: 55px;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2{
+            color: white;
+            margin-top: 25px;
+            margin-bottom: 7px;
+        }
+
+        p{
+            color:rgb(86 92 103);
+            line-height: 22px;
+        }
+
+        .btn-container circle{
+            cursor:pointer;
+        }
+
+        .btn-container .circle:hover{
+            background-color: hsl(26.3deg 96.71% 52.35%);
+
+        }
+
+        .btn-container{
+
+            margin-top: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .block-btn{
+            display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(26.3deg 96.71% 52.35%);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="circle">
+            <img src="images/icon-star.svg" alt="">
+        </div>
+
+        <h2>How did we do?</h2>
+
+        <p>Let every body know that we askd asd asasd as asd asdhjasgd ash gashdg se sdf sdlf dlsf sdl;nsdlfksdlf  sdashda</p>
+
+        <div class="btn-container">
+            <button class="circle">1</button>
+            <button class="circle">2</button>
+            <button class="circle">3</button>
+            <button class="circle">4</button>
+            <button class="circle">5</button>
+        </div>
+
+        <button class="block-btn">Submit</button>
+
+    </div>
+
+</body>
+</html>
